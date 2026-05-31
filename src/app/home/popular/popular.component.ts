@@ -20,7 +20,7 @@ export class PopularComponent {
 
   //for use of routingg or navigating use Router
   navigateToCourses(){
-    // this.router.navigate(['/courses']);
+    // this.router.navigate(['courses']);
     this.router.navigateByUrl('courses');
   }
 
