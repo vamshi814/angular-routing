@@ -17,7 +17,7 @@ export class CourseDetailComponent implements OnInit{
   activeRoute: ActivatedRoute = inject(ActivatedRoute);
   
   ngOnInit(){
-
+// Only reads the value present at initialization
     //  this.courseId = this.activeRoute.snapshot.params['id'];
     // console.log(this.courseId);
 
@@ -27,7 +27,10 @@ export class CourseDetailComponent implements OnInit{
     // ------------------------------------
     // Only reads the value present at initialization
      //this.courseId = +this.activeRoute.snapshot.paramMap.get('id');
-    
+
+
+     
+    //------------------------------------------------------------------------
     // this.activeRoute.paramMap.subscribe(data => {
     //   this.courseId = data.get('id'); // Resolves parameter reactively
     //   console.log(this.courseId);
