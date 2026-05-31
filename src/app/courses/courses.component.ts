@@ -8,16 +8,16 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './courses.component.html',
   styleUrls: ['./courses.component.css']
 })
-export class CoursesComponent implements OnInit{
+export class CoursesComponent {
 
   courseService: CourseService = inject(CourseService);
   AllCourses: Course[] = this.courseService.courses;
 
-  searchString!: string;
+  //searchString!: string;
   activeRoute: ActivatedRoute = inject(ActivatedRoute);
 
-  ngOnInit(){
-    this.AllCourses = this.activeRoute.snapshot.queryParams['search'];
-    console.log(this.searchString);
-  }
+  // ngOnInit(){
+  //   this.AllCourses = this.courseService.courses;
+  //   //console.log(this.searchString);
+  // }
 }

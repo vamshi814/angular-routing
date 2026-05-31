@@ -8,7 +8,8 @@ import { ServicesService } from 'src/app/Services/services.service';
 })
 export class ServicesComponent {
 
-   servicesService = inject(ServicesService);
+   
+  servicesService = inject(ServicesService);
     services: {title: string, image: string, description: string}[] = [];
 
     ngOnInit(){

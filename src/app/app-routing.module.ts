@@ -8,14 +8,14 @@ import { ContactComponent } from './contact/contact.component';
 import { CourseDetailComponent } from './courses/course-detail/course-detail.component';
 
 export const routes: Routes = [
-    {path: '', component: HomeComponent},
+    //{path: '', component: HomeComponent},
     // {path: '', redirectTo: Home, }
     {path: 'home', component: HomeComponent},
     {path: 'about', component: AboutComponent},
     {path: 'contact', component: ContactComponent},
     {path: 'courses', component: CoursesComponent},
     {path: 'courses/course/:id', component: CourseDetailComponent},
-    // {path: '**', component: NotFoundComponent}
+    {path: '**', component: NotFoundComponent}
 ];
 
 @NgModule({

@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./testimony.component.css']
 })
 export class TestimonyComponent {
-    testimonials: string[] = ['Avery Holmes', 'Craig Ramirez', 'Landon Stephens', 'Leah Ward']
+    testimonials: string[] = ['John', 'Peter Paul', 'Spartacus', 'Leah Ward']
 
 }

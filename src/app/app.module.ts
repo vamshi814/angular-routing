@@ -17,6 +17,9 @@ import { PopularComponent } from './home/popular/popular.component';
 import { ServicesComponent } from './home/services/services.component';
 import { TestimonyComponent } from './home/testimony/testimony.component';
 import { CourseDetailComponent } from './courses/course-detail/course-detail.component';
+import { ServicesService } from './Services/services.service';
+import { CourseService } from './Services/course.service';
+import { UserService } from './Services/user.service';
 
 
 
@@ -46,7 +49,7 @@ import { CourseDetailComponent } from './courses/course-detail/course-detail.com
     AppRoutingModule,
     
   ],
-  providers: [],
+  providers: [ServicesService,CourseService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
