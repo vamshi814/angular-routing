@@ -9,7 +9,8 @@ export class AuthService{
     userService: UserService = inject(UserService);
 
     login(username: string, password: string){
-        let user = this.userService.users.find((u) => u.username === username 
+        let user = this.userService.users.find(
+                                                (u) => u.username === username 
                                                     && u.password === password);
         if(user === undefined)
             this.isLogged = false;

@@ -7,6 +7,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import { CourseDetailComponent } from './courses/course-detail/course-detail.component';
 import { PopularComponent } from './home/popular/popular.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -22,6 +23,7 @@ export const routes: Routes = [
         {path: 'popular', component: PopularComponent}
       ]
     },
+    {path: 'login', component: LoginComponent},
     {path: '**', component: NotFoundComponent}
 ];
 
