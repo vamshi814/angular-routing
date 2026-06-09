@@ -10,6 +10,7 @@ import { PopularComponent } from './home/popular/popular.component';
 import { LoginComponent } from './login/login.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AuthGuardService } from './Services/authguard.service';
+import { CanActivateFn } from './auth.guard';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -23,7 +24,7 @@ export const routes: Routes = [
       [
         {path: 'course/:id', component: CourseDetailComponent},
         {path: 'popular', component: PopularComponent},
-        {path: 'checkout', component: CheckoutComponent, canActivate: [AuthGuardService] }
+        {path: 'checkout', component: CheckoutComponent, canActivate: [CanActivateFn] }
       ]
     },
     {path: 'login', component: LoginComponent},
