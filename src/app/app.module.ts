@@ -20,6 +20,7 @@ import { CourseDetailComponent } from './courses/course-detail/course-detail.com
 import { ServicesService } from './Services/services.service';
 import { CourseService } from './Services/course.service';
 import { UserService } from './Services/user.service';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 
@@ -39,7 +40,8 @@ import { UserService } from './Services/user.service';
     PopularComponent,
     ServicesComponent,
     TestimonyComponent,
-    CourseDetailComponent
+    CourseDetailComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
