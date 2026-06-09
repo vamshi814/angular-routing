@@ -10,7 +10,7 @@ import { PopularComponent } from './home/popular/popular.component';
 import { LoginComponent } from './login/login.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AuthGuardService } from './Services/authguard.service';
-import { CanActivateFn } from './auth.guard';
+import { CanActivateChildFn, CanActivateFn } from './auth.guard';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -20,8 +20,8 @@ export const routes: Routes = [
     {path: 'contact', component: ContactComponent},
     {path: 'courses', component: CoursesComponent},
     //{path: 'courses/course/:id', component: CourseDetailComponent},
-    // protects all children as old method 
-    {path: 'courses', canActivateChild: [AuthGuardService], children:
+    // protects all children as old method  implementing service , new method is function.
+    {path: 'courses', canActivateChild: [CanActivateChildFn], children:
       [
         {path: 'course/:id', component: CourseDetailComponent},
         {path: 'popular', component: PopularComponent},

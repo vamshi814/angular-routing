@@ -15,3 +15,9 @@ export const CanActivateFn = () => {
         return false;
     }
 }
+
+export const CanActivateChildFn = () => {
+
+    return CanActivateFn();
+
+}
