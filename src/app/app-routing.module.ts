@@ -20,7 +20,8 @@ export const routes: Routes = [
     {path: 'contact', component: ContactComponent},
     {path: 'courses', component: CoursesComponent},
     //{path: 'courses/course/:id', component: CourseDetailComponent},
-    {path: 'courses', children:
+    // protects all children as old method 
+    {path: 'courses', canActivateChild: [AuthGuardService], children:
       [
         {path: 'course/:id', component: CourseDetailComponent},
         {path: 'popular', component: PopularComponent},
